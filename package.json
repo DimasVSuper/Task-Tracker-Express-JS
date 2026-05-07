@@ -1,0 +1,17 @@
+{
+  "name": "task-tracker-node-js",
+  "version": "1.0.0",
+  "description": "A simple task tracker built with Node.js",
+  "main": "index.mjs",
+  "bin": {
+    "task-cli": "./index.mjs"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dimas Bayu Nugroho",
+  "license": "ISC",
+  "type": "module"
+}
