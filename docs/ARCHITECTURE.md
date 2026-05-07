@@ -40,12 +40,12 @@ This project is a pure Node.js CLI application for tracking tasks. It uses a mod
 6. Service methods modify the task list and save it back through `writeTasks`.
 7. The CLI prints success or error messages to the console.
 
-## File structure
+## File Structure
 
 - `index.mjs`
 - `package.json`
 - `docs/ARCHITECTURE.md`
-- `MVP.md`
+- `docs/MVP.md`
 - `README.md`
 - `data/task.json`
 - `src/cli.mjs`
