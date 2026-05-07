@@ -56,5 +56,10 @@ task-cli list
 This app is designed as an MVP project from the `task-tracker` roadmap.
 All features rely on native Node.js without external libraries.
 
-## Link
-https://roadmap.sh/projects/task-tracker
+## Links
+
+- https://roadmap.sh/projects/task-tracker
+
+## Credits
+
+Built by Dimas & Copilot.
