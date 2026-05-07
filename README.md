@@ -1,27 +1,27 @@
 # Task Tracker CLI
 
-Task Tracker adalah aplikasi command line sederhana untuk mengelola tugas sehari-hari.
-Proyek ini dibuat dengan pure Node.js tanpa framework, menggunakan penyimpanan lokal dalam file JSON.
+Task Tracker is a simple command line application to manage daily tasks.
+This project is built with pure Node.js (no framework) and stores data in a local JSON file.
 
-## Fitur
+## Features
 
-- Tambah tugas baru
-- Perbarui deskripsi tugas
-- Hapus tugas
-- Tandai tugas sebagai `in-progress`
-- Tandai tugas sebagai `done`
-- Daftar semua tugas
-- Daftar tugas berdasarkan status: `todo`, `in-progress`, `done`
+- Add new tasks
+- Update task descriptions
+- Delete tasks
+- Mark tasks as `in-progress`
+- Mark tasks as `done`
+- List all tasks
+- List tasks by status: `todo`, `in-progress`, `done`
 
-## Teknologi
+## Tech Stack
 
-- Node.js dengan `type: module`
-- Modul bawaan Node: `fs`, `path`
-- Penyimpanan data di `data/task.json`
+- Node.js with `type: module`
+- Built-in Node modules: `fs`, `path`
+- Data stored in `data/task.json`
 
-## Cara Pakai
+## Usage
 
-Dari folder proyek:
+From the project folder:
 
 ```powershell
 .\task-cli.cmd add "Buy groceries"
@@ -32,7 +32,7 @@ Dari folder proyek:
 .\task-cli.cmd delete 1
 ```
 
-Jika ingin menggunakan `task-cli` langsung setelah install lokal:
+If you want to use `task-cli` directly after a local install:
 
 ```powershell
 npm link
@@ -40,22 +40,21 @@ task-cli add "Buy groceries"
 task-cli list
 ```
 
-## Struktur Folder
+## Folder Structure
 
-- `index.mjs` - entry point CLI
-- `src/cli.mjs` - parser command line
-- `src/commands/taskCommands.mjs` - routing perintah CLI
-- `src/services/taskService.mjs` - business logic task
-- `src/model/storage.mjs` - baca/tulis `data/task.json`
-- `src/config/constants.mjs` - konstanta status dan help text
-- `src/utils/format.mjs` - format output task
-- `data/task.json` - penyimpanan data tugas
+- `index.mjs` - CLI entry point
+- `src/cli.mjs` - command line parser
+- `src/commands/taskCommands.mjs` - CLI command routing
+- `src/services/taskService.mjs` - task business logic
+- `src/model/storage.mjs` - read/write `data/task.json`
+- `src/config/constants.mjs` - status constants and help text
+- `src/utils/format.mjs` - task output formatting
+- `data/task.json` - task data storage
 
-## Catatan
+## Notes
 
-Aplikasi ini dirancang sebagai project MVP dari roadmap `task-tracker`.
-Semua fitur menggunakan native Node.js tanpa library eksternal.
+This app is designed as an MVP project from the `task-tracker` roadmap.
+All features rely on native Node.js without external libraries.
 
-
-## Link 
+## Link
 https://roadmap.sh/projects/task-tracker
